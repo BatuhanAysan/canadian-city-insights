@@ -1,0 +1,20 @@
+﻿REF_DATE,GEO,DGUID,Employment characteristics,Statistics,UOM,UOM_ID,SCALAR_FACTOR,SCALAR_ID,VECTOR,COORDINATE,VALUE,STATUS,SYMBOL,TERMINATED,DECIMALS
+2024,"Montréal, Quebec",2021S05002440,Total employed,Estimate,Persons in thousands,428,units,0,v1642744643,27.1.1,1098.8,,,,1
+2024,"Montréal, Quebec",2021S05002440,Goods-producing sector,Estimate,Persons in thousands,428,units,0,v1642744644,27.2.1,156.9,,,,1
+2024,"Montréal, Quebec",2021S05002440,"Agriculture [111-112, 1100, 1151-1152]",Estimate,Persons in thousands,428,units,0,v1642744645,27.3.1,2.4,,,,1
+2024,"Montréal, Quebec",2021S05002440,"Forestry, fishing, mining, quarrying, oil and gas [21, 113-114, 1153, 2100]",Estimate,Persons in thousands,428,units,0,v1642744646,27.4.1,1.6,,,,1
+2024,"Montréal, Quebec",2021S05002440,Utilities [22],Estimate,Persons in thousands,428,units,0,v1642744647,27.5.1,5.8,,,,1
+2024,"Montréal, Quebec",2021S05002440,Construction [23],Estimate,Persons in thousands,428,units,0,v1642744648,27.6.1,38.5,,,,1
+2024,"Montréal, Quebec",2021S05002440,Manufacturing [31-33],Estimate,Persons in thousands,428,units,0,v1642744649,27.7.1,108.6,,,,1
+2024,"Montréal, Quebec",2021S05002440,Services-producing sector,Estimate,Persons in thousands,428,units,0,v1642744650,27.8.1,942,,,,1
+2024,"Montréal, Quebec",2021S05002440,"Wholesale and retail trade [41, 44-45]",Estimate,Persons in thousands,428,units,0,v1642744651,27.9.1,145.9,,,,1
+2024,"Montréal, Quebec",2021S05002440,Transportation and warehousing [48-49],Estimate,Persons in thousands,428,units,0,v1642744652,27.10.1,62.9,,,,1
+2024,"Montréal, Quebec",2021S05002440,"Finance, insurance, real estate, rental and leasing [52-53]",Estimate,Persons in thousands,428,units,0,v1642744653,27.11.1,81,,,,1
+2024,"Montréal, Quebec",2021S05002440,"Professional, scientific and technical services [54]",Estimate,Persons in thousands,428,units,0,v1642744654,27.12.1,148.9,,,,1
+2024,"Montréal, Quebec",2021S05002440,"Business, building and other support services [55-56]",Estimate,Persons in thousands,428,units,0,v1642744655,27.13.1,41.9,,,,1
+2024,"Montréal, Quebec",2021S05002440,Educational services [61],Estimate,Persons in thousands,428,units,0,v1642744656,27.14.1,88.8,,,,1
+2024,"Montréal, Quebec",2021S05002440,Health care and social assistance [62],Estimate,Persons in thousands,428,units,0,v1642744657,27.15.1,156,,,,1
+2024,"Montréal, Quebec",2021S05002440,"Information, culture and recreation [51, 71]",Estimate,Persons in thousands,428,units,0,v1642744658,27.16.1,71.1,,,,1
+2024,"Montréal, Quebec",2021S05002440,Accommodation and food services [72],Estimate,Persons in thousands,428,units,0,v1642744659,27.17.1,67.1,,,,1
+2024,"Montréal, Quebec",2021S05002440,Other services (except public administration) [81],Estimate,Persons in thousands,428,units,0,v1642744660,27.18.1,36.5,,,,1
+2024,"Montréal, Quebec",2021S05002440,Public administration [91],Estimate,Persons in thousands,428,units,0,v1642744661,27.19.1,42,,,,1
