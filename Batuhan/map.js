@@ -1,5 +1,5 @@
 // Initialize the Leaflet map centered on Canada
-const map = L.map('map').setView([54, -98], 5);
+const map = L.map('map').setView([54, -100], 4);
 
 // Add custom tile layer for better appearance
 L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.{ext}', {
