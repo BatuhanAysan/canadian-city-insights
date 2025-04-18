@@ -2,11 +2,11 @@
 const map = L.map('map').setView([54, -100], 4);
 
 // Add custom tile layer for better appearance
-L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.{ext}', {
+L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}{r}.{ext}', {
 	minZoom: 0,
-	maxZoom: 20,
-	attribution: '&copy; CNES, Distribution Airbus DS, © Airbus DS, © PlanetObserver (Contains Copernicus Data) | &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	ext: 'jpg'
+	maxZoom: 18,
+	attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	ext: 'png'
 }).addTo(map);
 
 // Layer for amenities
@@ -14,6 +14,9 @@ const amenityLayerGroup = L.layerGroup().addTo(map);
 
 // Load CSV and store globally
 let allCityData = [];
+let selectedCity = null;
+let selectedAmenityType = "all";
+
 Papa.parse("Output/dashboard_data.csv", {
   download: true,
   header: true,
@@ -34,17 +37,31 @@ function safeParseJSON(str) {
 }
 
 // Function to show amenities of selected city
-function showAmenities(cityName) {
-  amenityLayerGroup.clearLayers();
+function onCityChange(city) {
+  selectedCity = city;
+  updateMap();
+}
 
-  const city = allCityData.find(d => d.City.trim() === cityName.trim());
+function onAmenityTypeChange(type) {
+  selectedAmenityType = type;
+  updateMap();
+  if (typeof updateBubbleChart === "function") {
+    updateBubbleChart();
+  }
+}
+
+function updateMap() {
+  amenityLayerGroup.clearLayers();
+  if (!selectedCity) return;
+
+  const city = allCityData.find(d => d.City.trim() === selectedCity.trim());
   if (!city) {
-    console.warn(`City not found: ${cityName}`);
+    console.warn(`City not found: ${selectedCity}`);
     return;
   }
 
   const coords = JSON.parse(city.location);
-  map.setView([coords[1], coords[0]], 11); // zoom into the city
+  map.setView([coords[1], coords[0]], 11);
 
   const amenityTypes = [
     { key: "hospitals", color: "red" },
@@ -53,8 +70,9 @@ function showAmenities(cityName) {
   ];
 
   amenityTypes.forEach(({ key, color }) => {
-    const locations = safeParseJSON(city[`${key}_locations`]);
+    if (selectedAmenityType !== "all" && selectedAmenityType !== key) return;
 
+    const locations = safeParseJSON(city[`${key}_locations`]);
     locations.forEach(coord => {
       const marker = L.circleMarker([coord[1], coord[0]], {
         radius: 6,
@@ -67,3 +85,7 @@ function showAmenities(cityName) {
     });
   });
 }
+
+// Expose dropdown handlers to global scope
+window.onCityChange = onCityChange;
+window.onAmenityTypeChange = onAmenityTypeChange;

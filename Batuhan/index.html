@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>Canadian City Dashboard</title>
+  <title>Canadian City Insights Dashboard</title>
 
   <!-- Leaflet CSS & JS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -11,39 +11,25 @@
   <!-- Plotly JS -->
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-  <!-- Chart JS -->
+  <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <!-- PapaParse for CSV loading -->
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    #map {
-      height: 50vh;
-    }
-    #controls {
-      padding: 10px;
-    }
-    #bubbleChart {
-      height: 500px;
-      width: 100%;
-    }
-  </style>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
-  
+
   <h2 style="text-align:center">Canadian City Insights Dashboard</h2>
-  
+
   <div id="map"></div>
 
-  <div id="controls" style="padding: 10px;">
+  <div id="controls">
     <label for="citySelect"><strong>Select a City:</strong></label>
-    <select id="citySelect" onchange="showAmenities(this.value)">
+    <select id="citySelect" onchange="onCityChange(this.value)">
       <option value="">-- Choose a city --</option>
       <option value="Toronto">Toronto</option>
       <option value="Montreal">Montreal</option>
@@ -56,27 +42,31 @@
       <option value="Brampton">Brampton</option>
       <option value="Hamilton">Hamilton</option>
     </select>
-  </div>
-  
-  <canvas id="stackedBarLineChart"></canvas> 
 
-  <div id="controls">
-    <label for="amenityDropdown"><strong>Select Amenity Type:</strong></label>
-    <select id="amenityDropdown" onchange="onAmenityChange(this.value)">
-      <option value="hospitals_per_100k">Hospitals</option>
-      <option value="schools_per_100k">Schools</option>
-      <option value="groceries_per_100k">Groceries</option>
+    <label for="amenityDropdown" style="margin-left:20px;"><strong>Select Amenity Type:</strong></label>
+    <select id="amenityDropdown" onchange="onAmenityTypeChange(this.value)">
+      <option value="all">All Amenities</option>
+      <option value="hospitals">Hospitals</option>
+      <option value="universities">Schools</option>
+      <option value="supermarkets">Groceries</option>
     </select>
   </div>
 
-  <div id="bubbleChart"></div>
-  <div id="radarChart" style="width: 600px; height: 500px;"></div>
-  
+  <div id="dashboard">
+    <div id="bubbleChart" class="chart-container"></div>
+    <div id="barChart" class="chart-container"></div>
+    <div id="barLineChart" class="chart-container">
+      <canvas id="stackedBarLineChart"></canvas>
+    </div>
+    <div id="radarChart" class="chart-container"></div>
+  </div>
 
   <!-- JS logic -->
   <script src="map.js"></script>
   <script src="bubble_chart.js"></script>
+  <script src="bar_chart.js"></script>
   <script src="bar_line_chart.js"></script>
   <script src="radar_chart.js"></script>
+
 </body>
 </html>
