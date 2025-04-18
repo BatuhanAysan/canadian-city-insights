@@ -1,0 +1,20 @@
+﻿REF_DATE,GEO,DGUID,Employment characteristics,Statistics,UOM,UOM_ID,SCALAR_FACTOR,SCALAR_ID,VECTOR,COORDINATE,VALUE,STATUS,SYMBOL,TERMINATED,DECIMALS
+2024,"Toronto, Ontario",2021S05003530,Total employed,Estimate,Persons in thousands,428,units,0,v1642745696,40.1.1,3852,,,,1
+2024,"Toronto, Ontario",2021S05003530,Goods-producing sector,Estimate,Persons in thousands,428,units,0,v1642745697,40.2.1,611.8,,,,1
+2024,"Toronto, Ontario",2021S05003530,"Agriculture [111-112, 1100, 1151-1152]",Estimate,Persons in thousands,428,units,0,v1642745698,40.3.1,4.4,,,,1
+2024,"Toronto, Ontario",2021S05003530,"Forestry, fishing, mining, quarrying, oil and gas [21, 113-114, 1153, 2100]",Estimate,Persons in thousands,428,units,0,v1642745699,40.4.1,6.1,,,,1
+2024,"Toronto, Ontario",2021S05003530,Utilities [22],Estimate,Persons in thousands,428,units,0,v1642745700,40.5.1,23.3,,,,1
+2024,"Toronto, Ontario",2021S05003530,Construction [23],Estimate,Persons in thousands,428,units,0,v1642745701,40.6.1,223.7,,,,1
+2024,"Toronto, Ontario",2021S05003530,Manufacturing [31-33],Estimate,Persons in thousands,428,units,0,v1642745702,40.7.1,354.2,,,,1
+2024,"Toronto, Ontario",2021S05003530,Services-producing sector,Estimate,Persons in thousands,428,units,0,v1642745703,40.8.1,3240.2,,,,1
+2024,"Toronto, Ontario",2021S05003530,"Wholesale and retail trade [41, 44-45]",Estimate,Persons in thousands,428,units,0,v1642745704,40.9.1,534.4,,,,1
+2024,"Toronto, Ontario",2021S05003530,Transportation and warehousing [48-49],Estimate,Persons in thousands,428,units,0,v1642745705,40.10.1,230.9,,,,1
+2024,"Toronto, Ontario",2021S05003530,"Finance, insurance, real estate, rental and leasing [52-53]",Estimate,Persons in thousands,428,units,0,v1642745706,40.11.1,456,,,,1
+2024,"Toronto, Ontario",2021S05003530,"Professional, scientific and technical services [54]",Estimate,Persons in thousands,428,units,0,v1642745707,40.12.1,548.5,,,,1
+2024,"Toronto, Ontario",2021S05003530,"Business, building and other support services [55-56]",Estimate,Persons in thousands,428,units,0,v1642745708,40.13.1,140.5,,,,1
+2024,"Toronto, Ontario",2021S05003530,Educational services [61],Estimate,Persons in thousands,428,units,0,v1642745709,40.14.1,264.5,,,,1
+2024,"Toronto, Ontario",2021S05003530,Health care and social assistance [62],Estimate,Persons in thousands,428,units,0,v1642745710,40.15.1,434.4,,,,1
+2024,"Toronto, Ontario",2021S05003530,"Information, culture and recreation [51, 71]",Estimate,Persons in thousands,428,units,0,v1642745711,40.16.1,175.8,,,,1
+2024,"Toronto, Ontario",2021S05003530,Accommodation and food services [72],Estimate,Persons in thousands,428,units,0,v1642745712,40.17.1,180.8,,,,1
+2024,"Toronto, Ontario",2021S05003530,Other services (except public administration) [81],Estimate,Persons in thousands,428,units,0,v1642745713,40.18.1,134.5,,,,1
+2024,"Toronto, Ontario",2021S05003530,Public administration [91],Estimate,Persons in thousands,428,units,0,v1642745714,40.19.1,140,,,,1

@@ -1,0 +1,20 @@
+﻿REF_DATE,GEO,DGUID,Employment characteristics,Statistics,UOM,UOM_ID,SCALAR_FACTOR,SCALAR_ID,VECTOR,COORDINATE,VALUE,STATUS,SYMBOL,TERMINATED,DECIMALS
+2024,"Ottawa, Ontario",2021S05003510,Total employed,Estimate,Persons in thousands,428,units,0,v1642745453,37.1.1,836.3,,,,1
+2024,"Ottawa, Ontario",2021S05003510,Goods-producing sector,Estimate,Persons in thousands,428,units,0,v1642745454,37.2.1,116.1,,,,1
+2024,"Ottawa, Ontario",2021S05003510,"Agriculture [111-112, 1100, 1151-1152]",Estimate,Persons in thousands,428,units,0,v1642745455,37.3.1,6.1,,,,1
+2024,"Ottawa, Ontario",2021S05003510,"Forestry, fishing, mining, quarrying, oil and gas [21, 113-114, 1153, 2100]",Estimate,Persons in thousands,428,units,0,v1642745456,37.4.1,2.1,,,,1
+2024,"Ottawa, Ontario",2021S05003510,Utilities [22],Estimate,Persons in thousands,428,units,0,v1642745457,37.5.1,2.4,,,,1
+2024,"Ottawa, Ontario",2021S05003510,Construction [23],Estimate,Persons in thousands,428,units,0,v1642745458,37.6.1,64.8,,,,1
+2024,"Ottawa, Ontario",2021S05003510,Manufacturing [31-33],Estimate,Persons in thousands,428,units,0,v1642745459,37.7.1,40.6,,,,1
+2024,"Ottawa, Ontario",2021S05003510,Services-producing sector,Estimate,Persons in thousands,428,units,0,v1642745460,37.8.1,720.2,,,,1
+2024,"Ottawa, Ontario",2021S05003510,"Wholesale and retail trade [41, 44-45]",Estimate,Persons in thousands,428,units,0,v1642745461,37.9.1,102.9,,,,1
+2024,"Ottawa, Ontario",2021S05003510,Transportation and warehousing [48-49],Estimate,Persons in thousands,428,units,0,v1642745462,37.10.1,32.8,,,,1
+2024,"Ottawa, Ontario",2021S05003510,"Finance, insurance, real estate, rental and leasing [52-53]",Estimate,Persons in thousands,428,units,0,v1642745463,37.11.1,41.5,,,,1
+2024,"Ottawa, Ontario",2021S05003510,"Professional, scientific and technical services [54]",Estimate,Persons in thousands,428,units,0,v1642745464,37.12.1,89.4,,,,1
+2024,"Ottawa, Ontario",2021S05003510,"Business, building and other support services [55-56]",Estimate,Persons in thousands,428,units,0,v1642745465,37.13.1,25.4,,,,1
+2024,"Ottawa, Ontario",2021S05003510,Educational services [61],Estimate,Persons in thousands,428,units,0,v1642745466,37.14.1,60.3,,,,1
+2024,"Ottawa, Ontario",2021S05003510,Health care and social assistance [62],Estimate,Persons in thousands,428,units,0,v1642745467,37.15.1,95,,,,1
+2024,"Ottawa, Ontario",2021S05003510,"Information, culture and recreation [51, 71]",Estimate,Persons in thousands,428,units,0,v1642745468,37.16.1,30.7,,,,1
+2024,"Ottawa, Ontario",2021S05003510,Accommodation and food services [72],Estimate,Persons in thousands,428,units,0,v1642745469,37.17.1,46.4,,,,1
+2024,"Ottawa, Ontario",2021S05003510,Other services (except public administration) [81],Estimate,Persons in thousands,428,units,0,v1642745470,37.18.1,24.7,,,,1
+2024,"Ottawa, Ontario",2021S05003510,Public administration [91],Estimate,Persons in thousands,428,units,0,v1642745471,37.19.1,171,,,,1
