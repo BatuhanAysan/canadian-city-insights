@@ -50,11 +50,46 @@
       <option value="universities">Schools</option>
       <option value="supermarkets">Groceries</option>
     </select>
+
+    <label for="employmentSectorDropdown" style="margin-left:20px;"><strong>Select Employment Sector:</strong></label>
+    <!-- <select id="employmentSectorDropdown" onchange="onEmploymentSectorChange(this.value)">
+      <option value="all">All Sectors</option>
+      <option value="hospitals">Hospitals</option>
+      <option value="universities">Schools</option>
+      <option value="supermarkets">Groceries</option>
+    </select> -->
+    <select id="employmentSectorDropdown">
+      <option value="All Sectors">All Sectors</option>
+      <option value="goodsProducingData">Goods Production</option>
+      <option value="agricultureData">Agriculture</option>
+      <option value="extractingData">Extraction</option>
+      <option value="utilitiesData">Utilities</option>
+      <option value="constructionData">Construction</option>
+      <option value="manufacturingData">Manufacturing</option>
+      <option value="servicesProducingData">Services Production</option>
+      <option value="wholesaleAndRetailData">Wholesale & Retail</option>
+      <option value="transportationAndWarehousingData">Transportation & Warehousing</option>
+      <option value="financeData">Finance</option>
+      <option value="professionalScientificAndTechnicalServicesData">Professional, Scientific & Technical Services</option>
+      <option value="businessData">Business</option>
+      <!-- <option value="buildingAndOtherSupportServicesData">buildingAndOtherSupportServices</option> -->
+      <option value="educationalServicesData">Educational Services</option>
+      <option value="healthcareAndSocialAssistanceData">Healthcare & Social Assistance</option>
+      <option value="informationData">Information</option>
+      <!-- <option value="cultureAndRecreationData">cultureAndRecreation</option> -->
+      <option value="accommodationAndFoodServicesData">Accommodation & Food Services</option>
+      <option value="publicAdminData">Public Admin</option>
+      <option value="otherServicesData">Other Services</option>
+      <option value="totalEmployedData">Total Employed</option>
+    </select>
   </div>
 
   <div id="dashboard">
     <div id="bubbleChart" class="chart-container"></div>
-    <div id="barChart" class="chart-container"></div>
+    <div id="doughnut_chart" class="chart-container">
+      <canvas id="employmentSectorData"></canvas>
+    </div>
+    <!-- <div id="barChart" class="chart-container"></div> -->
     <div id="barLineChart" class="chart-container">
       <canvas id="stackedBarLineChart"></canvas>
     </div>
@@ -64,9 +99,10 @@
   <!-- JS logic -->
   <script src="map.js"></script>
   <script src="bubble_chart.js"></script>
-  <script src="bar_chart.js"></script>
+  <!-- <script src="bar_chart.js"></script> -->
   <script src="bar_line_chart.js"></script>
   <script src="radar_chart.js"></script>
+  <script src="doughnut_chart.js"></script>
 
 </body>
 </html>
