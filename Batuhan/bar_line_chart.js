@@ -43,7 +43,7 @@ function createChart() {
                 type: "bar"
             },
             {
-                label: "Average Income",
+                label: "Average Monthly Income",
                 // data: [10,10,12,6,9,13,5,13,9,4],
                 data: avgMonthlySalary,
                 borderColor: "lightgray",
@@ -83,7 +83,7 @@ function createChart() {
             plugins: {
                 title: {
                     display: true,
-                    text: 'Stacked Bar + Line Chart Example'
+                    text: 'Average 1 & 2 Bedroom Rentals, & Average Monthly Income by City'
                 }
             }
         }

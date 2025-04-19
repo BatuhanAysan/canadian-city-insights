@@ -79,13 +79,13 @@ function createDoughnutChart(labelsData, importedData) {
                 label: 'Dataset 1',
                 data: importedData,
                 borderColor: "black",
-                backgroundColor: "red"
+                backgroundColor: ["red", "orange", "yellow", "brown", "blue", "green", "purple"]
             }
         ]
     };
 
     const config = {
-        type: 'line',
+        type: 'doughnut',
         data: data,
         options: {
             responsive: true,
@@ -95,7 +95,7 @@ function createDoughnutChart(labelsData, importedData) {
             },
             title: {
                 display: true,
-                text: 'Chart.js Line Chart'
+                text: 'Employment Count In Sectors by City (In Thousands)'
             }
             }
         },
