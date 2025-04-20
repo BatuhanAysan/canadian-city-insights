@@ -25,12 +25,12 @@ header {
 
 
 #map {
-  height: 50vh;
+  height: 40vh;
   width: 100%;
 }
 
 #controls {
-  padding: 15px;
+  padding: 10px 15px;
   background-color: #ffffff;
   border-bottom: 1px solid #ccc;
   display: flex;
@@ -48,7 +48,7 @@ select {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   gap: 20px;
-  padding: 20px;
+  padding: 15px 20px;
 }
 
 .chart-container {
