@@ -5,9 +5,24 @@ body {
   background-color: #f5f5f5;
 }
 
-h2 {
-  margin-top: 20px;
+header {
+  display: flex;
+  justify-content: space-between;
 }
+
+.canadianFlagSide {
+  width: 30%;
+  background-color: red;
+}
+
+.heading {
+  background-image: url("../mapleLeaf.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* opacity: 50%; */
+}
+
 
 #map {
   height: 50vh;
@@ -55,3 +70,4 @@ select {
   display: flex;
   justify-content: center;
 }
+
