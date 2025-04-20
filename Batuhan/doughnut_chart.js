@@ -112,7 +112,9 @@ doughnutDropDown.addEventListener("change", (event) => {
     const sectorMap = {
         // "All Sectors": totalEmployedData,
         // 'totalEmployedData': totalEmployedData,
-        'goodsProducingData': goodsProducingData,
+        'goodsProducingData': {"data": goodsProducingData,
+                                "text": "testing"
+                                },
         'agricultureData': agricultureData,
         'extractingData': extractingData,
         'utilitiesData': utilitiesData,
@@ -136,10 +138,13 @@ doughnutDropDown.addEventListener("change", (event) => {
     };
 
     const selectedData = sectorMap[selectedSector];
+    let summaryChart = document.querySelector("#doughnutChartSummaryText");
     
     console.log(selectedSector);
+    console.log(selectedData["text"]);
     if (selectedData) {
-        createDoughnutChart(cityNames, selectedData);
+        createDoughnutChart(cityNames, selectedData["data"]);
+        summaryChart.textContent = selectedData["text"];
     } else {
         console.error("Invalid selection or missing data for:", selectedSector);
     }
