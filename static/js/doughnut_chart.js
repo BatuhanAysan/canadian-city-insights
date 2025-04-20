@@ -25,7 +25,7 @@ let otherServicesData = [];
 let totalEmployedData = [];
 
 async function fetchDoughnutData() {
-    const response = await fetch('Output/employment_sectors_by_city_df.csv');
+    const response = await fetch('../../Output/employment_sectors_by_city_df.csv');
     const csvText = await response.text();
     const rows = csvText.split('\n');
     cityData = rows.map(row => row.split(','));
