@@ -47,7 +47,22 @@ Access the live dashboard here: [Canadian City Insights Dashboard](https://batuh
 
 ## 📈 Key Findings
 
+Based on the data visualizations and comparative analysis across amenities, housing affordability, and employment metrics, the following key insights were derived:
 
+- **Healthcare Access**:  
+  Winnipeg and Edmonton have the highest number of hospitals per 100,000 people, while Brampton significantly lags behind in healthcare access relative to its population size.
+
+- **Education Access**:  
+  Vancouver stands out with the highest school availability per capita, whereas Mississauga and Brampton show notably lower educational facility access.
+
+- **Groceries Access**:  
+  Hamilton, Ottawa, and Vancouver offer better access to supermarkets compared to larger cities like Toronto, where grocery store availability per capita is comparatively lower.
+
+- **Affordability Gap**:  
+  Residents of Vancouver and Toronto face the highest rental burdens relative to their average monthly income, while cities like Winnipeg and Edmonton present a more affordable cost of living.
+
+- **Employment Stability**:  
+  Calgary and Edmonton experience the highest unemployment rates among the analyzed cities, whereas Mississauga and Brampton maintain lower and more stable employment conditions.
 
 
 ## 📷 Dashboard Preview
@@ -73,10 +88,16 @@ CANADIAN-CITY-INSIGHTS/
 │   │   ├── doughnut_chart.js
 │   │   ├── map.js
 │   │   ├── radar_chart.js
-│   ├── style.css
 │   ├── img/
 │   │   ├── mapLeaf.png
 │   │   ├── dashboard_preview.png
+│   ├── data/           # (copy for github pages link)
+│   │   ├── city_amenities_data.csv
+│   │   ├── city_rent_population.csv
+│   │   ├── dashboard_data.csv
+│   │   ├── employment_sectors_by_city_df.csv
+│   │   ├── unemployment_rates_data.csv
+│   ├── style.css
 ├── notebooks/
 │   ├── amenities_data.ipynb
 │   ├── dashboard_data.ipynb
