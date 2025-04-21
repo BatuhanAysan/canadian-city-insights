@@ -40,7 +40,7 @@ Access the live dashboard here: [Canadian City Insights Dashboard](https://batuh
 
 - 📍 **Interactive Map:** Select a city to view amenities (hospitals, schools, supermarkets)
 - 📊 **Bubble Chart:** Visualize the distribution of amenities per 100k population by city
-- 📈 **Single Bar Chart:** Select a city to see employment distribution across 18 sectors
+- 📈 **Horizontal Bar Chart:** Select a city to see employment distribution across 18 sectors
 - 📉 **Radar Chart:** Compare unemployment rates across cities
 - 🔄 **Dropdown Selections:** Dynamic updates for maps and charts
 
@@ -85,7 +85,7 @@ CANADIAN-CITY-INSIGHTS/
 │   ├── js/
 │   │   ├── bar_line_chart.js
 │   │   ├── bubble_chart.js
-│   │   ├── doughnut_chart.js
+│   │   ├── horizontal_bar_chart.js
 │   │   ├── map.js
 │   │   ├── radar_chart.js
 │   ├── img/

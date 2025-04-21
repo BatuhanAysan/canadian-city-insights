@@ -11,7 +11,7 @@ let vancouverData = [];
 let winnipegData = [];
 
 async function fetchEmploymentData() {
-    const response = await fetch("../../Output/employment_sectors_by_city_df.csv");
+    const response = await fetch("static/data/employment_sectors_by_city_df.csv");
     const csvText = await response.text();
     const rows = csvText.split("\n");
     cityData = rows.map(row => row.split(","));
