@@ -47,7 +47,10 @@ function createEmploymentChart(labelsData, importedData) {
                 label: importedData[0],
                 data: importedData,
                 borderColor: "black",
-                backgroundColor: ["red", "orange", "yellow", "brown", "blue", "green", "purple"]
+                backgroundColor: [
+                    "red", "lightblue", "lightblue", "lightblue", "lightblue", "lightblue", 
+                    "red", "lightblue", "lightblue", "lightblue", "lightblue", "lightblue", 
+                    "lightblue", "lightblue", "lightblue", "lightblue", "lightblue", "lightblue"]
             },
         ]
     };
