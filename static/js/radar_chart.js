@@ -1,6 +1,6 @@
 // Radar chart to display Average Unemployment Rate by City
 
-Papa.parse("../../Output/unemployment_rates_data.csv", {
+Papa.parse("static/data/unemployment_rates_data.csv", {
     download: true,
     header: true,
     complete: function(results) {

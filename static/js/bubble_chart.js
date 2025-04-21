@@ -2,7 +2,7 @@
 
 let bubbleChart;
 
-Papa.parse("../../Output/dashboard_data.csv", {
+Papa.parse("static/data/dashboard_data.csv", {
   download: true,
   header: true,
   complete: function(results) {

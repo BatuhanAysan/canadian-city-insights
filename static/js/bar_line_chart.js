@@ -5,7 +5,7 @@ let rental2Bedroom = [];
 let avgMonthlySalary = [5792, 4795, 4735, 5416, 4336, 4770, 3837, 4853, 4252, 4300];
 
 async function fetchData() {
-    const response = await fetch('../../Output/city_rent_population.csv');
+    const response = await fetch('static/data/city_rent_population.csv');
     const csvText = await response.text();
     const rows = csvText.split('\n');
     rentalData = rows.map(row => row.split(','));

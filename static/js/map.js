@@ -14,7 +14,7 @@ let allCityData = [];
 let selectedCity = null;
 let selectedAmenityType = "all";
 
-Papa.parse("../../Output/dashboard_data.csv", {
+Papa.parse("static/data/dashboard_data.csv", {
   download: true,
   header: true,
   complete: function(results) {
