@@ -57,39 +57,16 @@
       <option value="supermarkets">Groceries</option>
     </select>
 
-    <label for="employmentSectorDropdown" style="margin-left:20px;"><strong>Select Employment Sector:</strong></label>
-    <select id="employmentSectorDropdown">
-      <option value="All Sectors">All Sectors</option>
-      <option value="goodsProducingData">Goods Production</option>
-      <option value="agricultureData">Agriculture</option>
-      <option value="extractingData">Extraction</option>
-      <option value="utilitiesData">Utilities</option>
-      <option value="constructionData">Construction</option>
-      <option value="manufacturingData">Manufacturing</option>
-      <option value="servicesProducingData">Services Production</option>
-      <option value="wholesaleAndRetailData">Wholesale & Retail</option>
-      <option value="transportationAndWarehousingData">Transportation & Warehousing</option>
-      <option value="financeData">Finance</option>
-      <option value="professionalScientificAndTechnicalServicesData">Professional, Scientific & Technical Services</option>
-      <option value="businessData">Business</option>
-      <!-- <option value="buildingAndOtherSupportServicesData">buildingAndOtherSupportServices</option> -->
-      <option value="educationalServicesData">Educational Services</option>
-      <option value="healthcareAndSocialAssistanceData">Healthcare & Social Assistance</option>
-      <option value="informationData">Information</option>
-      <!-- <option value="cultureAndRecreationData">cultureAndRecreation</option> -->
-      <option value="accommodationAndFoodServicesData">Accommodation & Food Services</option>
-      <option value="publicAdminData">Public Admin</option>
-      <option value="otherServicesData">Other Services</option>
-      <option value="totalEmployedData">Total Employed</option>
-    </select>
+
   </div>
 
   <div id="dashboard">
     <div id="bubbleChart" class="chart-container"></div>
-    <div id="doughnut_chart" class="chart-container">
+
+    <div id="horizontalBarChart" class="chart-container">
       <canvas id="employmentSectorData"></canvas>
     </div>
-    <!-- <div id="barChart" class="chart-container"></div> -->
+
     <div id="barLineChart" class="chart-container">
       <canvas id="stackedBarLineChart"></canvas>
     </div>
@@ -101,7 +78,7 @@
   <script src="static/js/bubble_chart.js"></script>
   <script src="static/js/bar_line_chart.js"></script>
   <script src="static/js/radar_chart.js"></script>
-  <script src="static/js/doughnut_chart.js"></script>
+  <script src="static/js/horizontal_bar_chart.js"></script>
 
 </body>
 </html>

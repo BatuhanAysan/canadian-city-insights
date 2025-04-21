@@ -15,8 +15,6 @@ async function fetchData() {
 }
 
 function createChart() {
-    console.log("Using rentalData:", rentalData);
-    // Add your logic here
     rentalData = rentalData.slice(1, rentalData.length);
     rentalData.map((entry) => cities.push(entry[0]));
     rentalData.map((entry) => rental1Bedroom.push(entry[3]));
