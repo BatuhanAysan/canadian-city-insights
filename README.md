@@ -139,6 +139,16 @@ http://localhost:8000
 - [ZipRecruiter - Average Salary Data](https://www.ziprecruiter.com/)
 - [Geoapify API](https://www.geoapify.com/) (for amenities geolocation)
 
+## Ethical Considerations
+
+During the development of this project, we were careful to ensure that all data used was sourced from publicly available, open data repositories such as Statistics Canada, CMHC, and OpenStreetMap.
+
+We strictly adhered to the terms of use and citation requirements of each dataset. No personally identifiable information (PII) was collected or processed at any stage of this project.
+
+In visualizing city-level amenities, employment, and housing data, we acknowledged that access to resources can vary within cities and may not fully represent localized inequalities.
+
+We also recognize that employment and housing markets are dynamic, and that our analysis reflects a snapshot in time based on the most recent data available. Users should be aware that actual conditions may differ as economic and demographic trends evolve.
+
 
 ## 👥 Contributors
 
